@@ -26,6 +26,12 @@ namespace ConsoleApp1.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFunctionCalculate/Number20", ReplyAction="http://tempuri.org/IFunctionCalculate/Number20Response")]
         System.Threading.Tasks.Task<double> Number20Async(double x, double y);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFunctionCalculate/Number22", ReplyAction="http://tempuri.org/IFunctionCalculate/Number22Response")]
+        double Number22(double x, double y);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFunctionCalculate/Number22", ReplyAction="http://tempuri.org/IFunctionCalculate/Number22Response")]
+        System.Threading.Tasks.Task<double> Number22Async(double x, double y);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace ConsoleApp1.ServiceReference1 {
         
         public System.Threading.Tasks.Task<double> Number20Async(double x, double y) {
             return base.Channel.Number20Async(x, y);
+        }
+        
+        public double Number22(double x, double y) {
+            return base.Channel.Number22(x, y);
+        }
+        
+        public System.Threading.Tasks.Task<double> Number22Async(double x, double y) {
+            return base.Channel.Number22Async(x, y);
         }
     }
 }

@@ -25,7 +25,10 @@ namespace Microsoft.ServiceModel.Samples
                 Console.WriteLine($"Function 8: {result}");
 
                 double result1 = functionCalculateClient.Number20(value1, value2);
-                Console.WriteLine($"Function 22: {result1}");
+                Console.WriteLine($"Function 20: {result1}");
+
+                double result2 = functionCalculateClient.Number22(value1, value2);
+                Console.WriteLine($"Function 22: {result2}");
                 functionCalculateClient.Close();
 
                 Console.WriteLine("Сеанс работы с сервисом завершен.");

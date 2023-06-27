@@ -30,4 +30,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Number22">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:double" />
+        <xs:element minOccurs="0" name="y" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Number22Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Number22Result" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
